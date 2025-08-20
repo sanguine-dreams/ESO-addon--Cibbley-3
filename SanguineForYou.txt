@@ -1,0 +1,6 @@
+## Title: SanguineForYou
+## Author: @SeduraXyr
+## APIVersion: 101047
+
+SanguineForYou.lua
+SanguineForYou.xml
