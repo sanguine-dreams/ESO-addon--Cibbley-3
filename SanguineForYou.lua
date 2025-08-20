@@ -2,8 +2,8 @@ SanguineForYou = {}
 SanguineForYou.name = "SanguineForYou"
 
 local function updateClock()
-    local utcNow = os.time(os.date("!*t")) -- always UTC
-    local future = utcNow + (3 * 60 * 60)  -- add 7 hours for UTC+7
+    local utcNow = os.time(os.date("!*t")) 
+    local future = utcNow + (3 * 60 * 60)  
     local time = os.date("%H:%M", future)
     SanguineForYouLabel:SetText("Sanguine from " .. time .. " loves you <3.")
     zo_callLater(function() updateClock() end, 1000)
@@ -25,3 +25,4 @@ SLASH_COMMANDS["/hidelove"] = HideLove
 SLASH_COMMANDS["/showlove"] = ShowLove
 
 EVENT_MANAGER:RegisterForEvent(SanguineForYou.name, EVENT_ADD_ON_LOADED, SanguineForYou.OnAddOnLoaded)
+
